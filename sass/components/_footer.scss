@@ -1,0 +1,25 @@
+// Footer
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $additional-background-color;
+
+    .container {
+        display: flex;
+        align-items: baseline;
+
+    }
+}
+
+.logo__footer {
+    display: block;
+    margin-bottom: 20px;
+    color: $main-white-color;
+}
+
+
+
+.social__icon-footer {
+    fill: $main-white-color;
+}

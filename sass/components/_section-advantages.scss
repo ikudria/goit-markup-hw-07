@@ -1,0 +1,58 @@
+// Section "Advantages"
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__icon-1::before {
+        background-image: url('../images/antenna.svg');
+    }
+
+    &__icon-2::before {
+        background-image: url('../images/clock.svg');
+    }
+
+    &__icon-3::before {
+        background-image: url('../images/diagram.svg');
+    }
+
+    &__icon-4::before {
+        background-image: url('../images/astronaut.svg');
+    }
+}
+
+.advantages__item {
+    width: 270px;
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    &::before {
+        display: block;
+        content: '';
+        height: 120px;
+        background-color: $passive-button-bg;
+        margin-bottom: 30px;
+
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+    }
+}
+
+.advantages__title {
+    @extend %title-margin-color;
+
+    @include font(14px, 1.14);
+
+    text-transform: uppercase;
+}
+
+.advantages-description {
+    @include font(14px, 1.7, 400);
+
+    color: $primary-text-color;
+}

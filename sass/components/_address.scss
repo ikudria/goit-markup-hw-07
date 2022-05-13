@@ -1,0 +1,36 @@
+.address__container {
+    display: block;
+    margin-right: 70px;
+}
+
+.address {
+    font-style: normal;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__location {
+    color: $main-white-color;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: color $transition;
+}
+
+.address__email,
+.address__tel {
+    @include font (14px, 1.7, 400);
+    color: $additional-text-color;
+
+    transition: color $transition;
+}
+
+.address__location:hover,
+.address__location:focus,
+.address__email:hover,
+.address__email:focus,
+.address__tel:hover,
+.address__tel:focus {
+    color: $accent-color;
+}

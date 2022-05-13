@@ -1,0 +1,102 @@
+// Social Networks 
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__item {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+}
+
+.social__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 22px;
+    transition: background-color $transition;
+
+    &:hover {
+        background-color: $accent-color;
+
+    }
+
+    &:focus {
+        background-color: $accent-color;
+    }
+
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+// Section "Frequent customers"
+
+.customers {
+    display: flex;
+}
+
+.customers__item {
+    flex-basis: calc((100% - 6 * 30px) / 6);
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1 px solid $passive-link-color;
+    border-radius: 4px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+}
+
+.customers__link {
+    display: flex;
+    border: 1px solid $passive-link-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    padding: 16px 32px;
+
+    width: 100%;
+    height: 100%;
+    fill: $passive-link-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border $transition;
+
+    &:hover {
+        border: 1px solid $accent-color;
+    }
+
+    &:focus {
+        border: 1px solid $accent-color;
+    }
+
+}
+
+.customers__logo {
+    transition: fill $transition;
+}
+
+.customers__link:hover .customers__logo,
+.customers__link:focus .customers__logo {
+    fill: $accent-color;
+}
