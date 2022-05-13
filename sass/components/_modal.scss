@@ -116,19 +116,21 @@
     outline: none;
 
     transition: border-color $transition;
-}
 
-.form-input:focus {
+
+&:focus {
     border-color: $accent-color;
 }
 
-.form-input:not(:last-child) {
+&:not(:last-child) {
     padding-left: 42px;
 }
 
-.form-input:last-child {
+&:last-child {
     padding-left: 16px;
 }
+}
+
 
 
 .form-textarea {
@@ -138,16 +140,16 @@
     height: 120px;
 
 
-}
 
-.form-textarea::placeholder {
+
+&::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-weight: 400;
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.01em;
 }
-
+}
 
 .form-icon {
     position: absolute;
@@ -186,9 +188,9 @@
     font-family: inherit;
     /* border-bottom: 1px solid $accent-color);
     line-height: 2; */
-}
 
-.agreement-link::after {
+
+&::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -196,6 +198,7 @@
     bottom: 1px;
     left: 0;
     background-color: $accent-color;
+}
 }
 
 .legal-check {
