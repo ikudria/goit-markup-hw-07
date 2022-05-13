@@ -1,8 +1,7 @@
-.body * {
+body * {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: #757575;
-  background-color: #ffffff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
